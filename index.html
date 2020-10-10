@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    </head>
+    <body>
+        <!---------- Header of Page ----------->
+        <header class="header">
+            <div class="bar">
+                <a href="https://w3layouts.com/">
+                    <span><i class="fas fa-chevron-left fa-lg"></i></span>
+                    <span class="back">Back</span>
+                </a>
+                <div>
+                    <a href="https://w3layouts.com/cakes-bakery-restaurants-category-bootstrap-responsive-web-template/">
+                        <span><i class="fa fa-download fa-lg"></i></span>
+                        <span class="download">Download</span>
+                    </a>
+                    <a href="https://w3layouts.com/cakes-bakery-restaurants-category-bootstrap-responsive-web-template/" class="buyNow">
+                        <span><i class="fas fa-cart-arrow-down fa-lg"></i></span>
+                        <span class="removeBuy">Buy Now</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!------------End Header of Page ------>
+
+        <!------------- Container ------------->
+        <div class="container">
+            <!------ Header of Container ------>
+            <header>
+                <nav class="nav">
+                    <div class="textLogo">
+                        <h1>
+                            <a>
+                                <img src="Images/logo.png" alt="...">
+                                Cakes Bakery
+                            </a>
+                        </h1>
+                    </div>
+                    <div id="navBar" class="navBar">
+                        <ul class="ul">
+                            <li><a href="#home" id="homeActive" class="details">Home</a></li>
+                            <li><a href="" class="details">About Us</a></li>
+                            <li>
+                               <a id="dropBtn" class="details" onclick="showDropdown()">Dropdown <i class="fa fa-caret-down"></i></a>
+                               <div id="dropShow" class="dropdownContent">
+                                    <a class="dropdownItem" href="#">Services</a>
+                                    <a class="dropdownItem" href="#">New Products</a>
+                                    <a class="dropdownItem" href="#">Company News</a>
+                                    <a class="dropdownItem" href="#">Team</a>
+                                </div>
+                            </li>
+                            <li><a href="" class="details">Gallery</a></li>
+                            <li><a href="" class="details">Contact Us</a></li>
+                        </ul> 
+                        <a id="navIcon" class="navIcon" onclick="showNavIcon()">☰</a>
+                        <div id="menu" class="menu">                          
+                            <ul>
+                                <li><a href="">Index Page</a></li>
+                                <li><a href="">New Products</a></li>
+                                <li><a href="">Latest Cakes</a></li>
+                                <li><a href="">Order Cake</a></li>
+                                <li><a href="">Faqs</a></li>
+                                <li><a href="">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" id="icon" class="icon" onclick="showNavbarToggle()">☰</a>
+                </nav>
+            </header>
+            <!-----End Header of Container ---->
+
+            <!--------- Slider Container ------>
+            <div class="sliderMain">
+                <div class="bannerContainer">
+                    <div class="bannerText">
+                        <h3 class="taste">The Taste Of Our Amazing Cakes</h3>
+                        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <button class="button">
+                            <span>Watch Our Video</span>
+                        </button>
+                    </div>
+                </div>
+                <a id="prev" onclick = "plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+                <div id="slider"></div>
+                <a id="next" onclick = "plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+                <div id="circle" class="circle">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                </div>
+            </div>
+            <!------End Slider Container ------>
+
+            <!--------- Banner Container ------>
+            <div class="iconsBanner">
+                <div class="bannerText">
+                    <ul class="listStyled">
+                        <li class="iconCake">
+                            <p class="cakesText">Chocolate</p>
+                            <img src="Images/img1.png" class="imgFluid" alt="...">
+                        </li>
+                        <li class="iconCake">
+                            <p class="cakesText">Strawberry</p>
+                            <img src="Images/img2.png" class="imgFluid" alt="...">
+                        </li>
+                        <li class="iconCake">
+                            <p class="cakesText">Pista</p>
+                            <img src="Images/img3.png" class="imgFluid" alt="...">
+                        </li>
+                        <li class="iconCake">
+                            <p class="cakesText">Vanilla</p>
+                            <img src="Images/img4.png " class="imgFluid" alt="...">
+                        </li>
+                        <li class="iconCake">
+                            <p class="cakesText">Muffins</p>
+                            <img src="Images/img5.png" class="imgFluid" alt="...">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!------End Banner Container ------>
+        </div>
+        <!----------End of Container ---------->
+
+        <!-------------- Section -------------->
+        <section class="section">
+            <div class="bannerBottom">
+                <div class="bannerText textBottom">
+                    <div class="row">
+                        <div class="rowText">
+                            <p class="textUppercase">A FEW WORDS</p>
+                            <h3 class="aboutRightH3">Welcome to our Cakes Bakery</h3>
+                            <h4 class="aboutRightH4">Nemo enim ipsam voluptatem quia voluptas dolore magna aliqua</h4>
+                            <p class="">Sit amet when an unknown printer took a galley of type.Vivamus id tempor felis. Cras sagittis mi sit amet malesuada. mollis. Mauris porroinit consectetur cursus tortor vel interdum. Suspendisse interdum velit vel qu dapibus condimentum.</p>
+                            <button class="button">
+                                <span>Learn More</span>
+                            </button>
+                        </div>
+                        <div class="rowImage">
+                            <img src="Images/about.png" class="imgFluid" alt="...">
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="anotherBanner"> 
+                <div class="bannerText">
+                    <i class="fas fa-utensils"></i>
+                    <p class="textUppercase">A FEW WORDS ABOUT OUR SITE</p>
+                    <h4 class="aboutRightH4  changeColor">Nemo enim ipsam voluptatem quia voluptas dolore magna aliqua Suspendisse interdum velit vel qu dapibus condimentum.</h4>
+                    <h5 class="h5">
+                        Chloe Jack 
+                        <span class="master">(Master Chef)</span>
+                    </h5>
+                </div>
+            </div>
+            <img src="Images/cake7.png" class="imgFluid  cake7" alt="...">
+        </section>    
+        <!-----------End of Section ----------->
+
+        <!-------------- Services -------------->
+        <div class="service">
+            <div class="bannerText">
+                <div class="row textCenter wrapping">
+                    <div class="colRow">
+                        <i class="far fa-heart"></i>
+                        <h5>MADE WITH LOVE</h5>
+                        <p>Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
+                    </div>
+                    <div class="colRow">
+                        <i class="fas fa-birthday-cake"></i>
+                        <h5>SEASONAL PASTRIES</h5>
+                        <p>Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
+                    </div>
+                    <div class="colRow">
+                        <i class="far fa-calendar"></i>
+                        <h5>EVENT CATERING</h5>
+                        <p>Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------- End of Services ----------> 
+
+        <!----------- States Section ----------->
+        <div class="middleSection">
+            <div class="bannerText">
+                <div class="row">
+                    <div class="colStates pTopImg">
+                        <img src="Images/women.png" class="imgFluid womanStyle" alt="...">
+                    </div>
+                    <div class="colStates pTopText">
+                        <div class="paddTop">
+                            <h2 class="title">Some Statistical Facts</h2>
+                            <div class="row">
+                                <div class="layoutStates">
+                                    <p class="counter">1680</p>
+                                    <p>Popularity</p>
+                                </div>
+                                <div class="layoutStates">
+                                    <p class="counter">1200</p>
+                                    <p>Happy Customers</p>
+                                </div>
+                                <div class="layoutStates">
+                                    <p class="counter">400</p>
+                                    <p>Awards Won</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------- End States Section ---------> 
+
+        <!------------- New Product ------------>
+        <div class="products" id="products">
+            <div class="bannerText padProduct">
+                <div class="title2 textCenter">
+                    <h3>New Products</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud ullam</p>
+                </div>
+                <div class="contentBottom">
+                    <div class="flexInner">
+                        <ul id="flexiselDemo">
+                            <li class="flexiselItem">
+                                <div class="row">
+                                    <div class="colFlexisel">
+                                        <h4>Strawberry Cakes</h4>
+                                        <p class="">
+                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accuslaudantium.                         
+                                        </p>
+                                        <p class="">
+                                            Eaque ipsa quae ab illo inventore veritatis et quasi architecto vitae dicta sunt explicabo, Sed ut perspiciatis unde omnis iste natus error sit voluptatem accuslaudantium.
+                                        </p>
+                                        <a class="orderButton">Oreder Now</a> 
+                                    </div>
+                                    <div id="colFlexisel" class="colFlexisel">
+                                        <img src="Images/product1.jpg" class="imgProduct" alt="...">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="flexiselItem">
+                                <div class="row">
+                                    <div class="colFlexisel">
+                                        <h4>Strawberry Cakes</h4>
+                                        <p class="">
+                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accuslaudantium.                         
+                                        </p>
+                                        <p class="">
+                                            Eaque ipsa quae ab illo inventore veritatis et quasi architecto vitae dicta sunt explicabo, Sed ut perspiciatis unde omnis iste natus error sit voluptatem accuslaudantium.
+                                        </p>
+                                        <a class="orderButton">Oreder Now</a> 
+                                    </div>
+                                    <div id="colFlexisel" class="colFlexisel">
+                                        <img src="Images/product2.jpg" class="imgProduct" alt="...">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="flexiselItem">
+                                <div class="row">
+                                    <div class="colFlexisel">
+                                        <h4>Strawberry Cakes</h4>
+                                        <p class="">
+                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accuslaudantium.                         
+                                        </p>
+                                        <p class="">
+                                            Eaque ipsa quae ab illo inventore veritatis et quasi architecto vitae dicta sunt explicabo, Sed ut perspiciatis unde omnis iste natus error sit voluptatem accuslaudantium.
+                                        </p>
+                                        <a class="orderButton">Oreder Now</a> 
+                                    </div>
+                                    <div id="colFlexisel" class="colFlexisel">
+                                        <img src="Images/product3.jpg" class="imgProduct" alt="...">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="flexiselItem">
+                                <div class="row">
+                                    <div class="colFlexisel">
+                                        <h4>Strawberry Cakes</h4>
+                                        <p class="">
+                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accuslaudantium.                         
+                                        </p>
+                                        <p class="">
+                                            Eaque ipsa quae ab illo inventore veritatis et quasi architecto vitae dicta sunt explicabo, Sed ut perspiciatis unde omnis iste natus error sit voluptatem accuslaudantium.
+                                        </p>
+                                        <a class="orderButton">Oreder Now</a> 
+                                    </div>
+                                    <div id="colFlexisel" class="colFlexisel">
+                                        <img src="Images/product4.jpg" class="imgProduct" alt="...">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="flexiselItem">
+                                <div class="row">
+                                    <div class="colFlexisel">
+                                        <h4>Strawberry Cakes</h4>
+                                        <p class="">
+                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accuslaudantium.                         
+                                        </p>
+                                        <p class="">
+                                            Eaque ipsa quae ab illo inventore veritatis et quasi architecto vitae dicta sunt explicabo, Sed ut perspiciatis unde omnis iste natus error sit voluptatem accuslaudantium.
+                                        </p>
+                                        <a class="orderButton">Oreder Now</a> 
+                                    </div>
+                                    <div id="colFlexisel" class="colFlexisel">
+                                        <img src="Images/product5.jpg" class="imgProduct" alt="...">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="flexiselLeft" onclick="plusProduct(1)"></div>
+                        <div class="flexiselRight" onclick="plusProduct(-1)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------- End New Product ---------->
+
+        <!--------------- News ----------------->
+        <div class="news">
+            <div class="bannerText padProduct">
+                <div class="row">
+                    <div class="colNews">
+                        <div class="registeration">
+                            <h3 class="title">Order a Cake</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+                            <form action="#" class="form">
+                                <div class="formGroup"> 
+                                    <label>Shape</label>
+                                    <select required>
+                                        <option value>Round</option>
+                                        <option value="1">Rectangle</option>
+                                        <option value="2">Square</option>
+                                        <option value="2">Custom</option>
+                                    </select>
+                                </div>
+                                <div class="formGroup"> 
+                                    <label>Levels</label>
+                                    <select required>
+                                        <option value>1</option>
+                                        <option value="1">2</option>
+                                        <option value="2">3</option>
+                                        <option value="2">4</option>
+                                    </select>
+                                </div>
+                                <div class="formGroup"> 
+                                    <label></label>
+                                    <select required>
+                                        <option value>4 inch</option>
+                                        <option value>6 inch</option>
+                                        <option value>8 inch</option>
+                                        <option value>10 inch</option>
+                                    </select>
+                                </div>
+                                <div class="formGroup"> 
+                                    <label>Flavor</label>
+                                    <select required>
+                                        <option value>Chocolate</option>
+                                        <option value>Butterscotch</option>
+                                        <option value>Strawberry</option>
+                                        <option value>Vanilla</option>
+                                    </select>
+                                </div>
+                                <input type="submit" class="order">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="colNews2">
+                        <h3 class="title">Company News</h3>
+                        <div class="row">
+                            <div class="colCompany">
+                                <div class="newsTop">
+                                    <a href="#">
+                                        <img src="Images/news1.jpg" class="imgFluid" alt="...">
+                                    </a>
+                                </div>
+                                <div class="priceBottom">
+                                    <a href="#">Sep 21st, 2018</a>
+                                    <h5>Sit voluptatem accusantium doloremque</h5>
+                                </div>
+                            </div>
+                            <div class="colCompany">
+                                <div class="newsTop">
+                                    <a href="#">
+                                        <img src="Images/news2.jpg" class="imgFluid" alt="...">
+                                    </a>
+                                </div>
+                                <div class="priceBottom">
+                                    <a href="#">Sep 21st, 2018</a>
+                                    <h5>Sit voluptatem accusantium doloremque</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="questions">
+                            <h3 class="title">Frequently asked questions</h3>
+                            <ul class="listStyled">
+                                <li class="item1" onclick="showQuestions(1)">
+                                    <a>
+                                        Consectetur adipiscing sit elitipsum nec?
+                                        <i class="fas fa-plus float-right"></i>
+                                    </a>
+                                    <ul id="paragraph1" class="listStyled">
+                                        <li class="subItem">
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="item2 margItem" onclick="showQuestions(2)">
+                                    <a>
+                                        Consectetur adipiscing sit elitipsum nec?
+                                        <i class="fas fa-plus float-right"></i>
+                                    </a>
+                                    <ul id="paragraph2" class="listStyled">
+                                        <li class="subItem">
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="item3 margItem" onclick="showQuestions(3)">
+                                    <a>
+                                        Consectetur adipiscing sit elitipsum nec?
+                                        <i class="fas fa-plus float-right"></i>
+                                    </a>
+                                    <ul id="paragraph3" class="listStyled">
+                                        <li class="subItem">
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="item4" onclick="showQuestions(4)">
+                                    <a>
+                                        Consectetur adipiscing sit elitipsum nec?
+                                        <i class="fas fa-plus float-right"></i>
+                                    </a>
+                                    <ul id="paragraph4" class="listStyled">
+                                        <li class="subItem">
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------- End News ------------->
+
+        <!--------------- Support -------------->
+        <div class="products" id="products">
+            <div class="bannerText padProduct">
+                <div class="title2 textCenter">
+                    <h3>Help & Support</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud ullam</p>
+                </div>
+                <div class="row textCenter wrapping">
+                    <div class="colRow">
+                        <i class="fas fa-headphones"></i>
+                        <h5>Online Support</h5>
+                        <p>Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
+                        <button type="button" class="call">
+                            <span>Call Us</span>
+                        </button>
+                    </div>
+                    <div class="colRow">
+                        <i class="far fa-comments"></i>
+                        <h5>Live Chat 24/7</h5>
+                        <p>Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
+                        <button type="button" class="chart">
+                            <span>Let's Chart</span> 
+                        </button>
+                    </div>
+                    <div class="colRow">
+                        <i class="fas fa-question"></i>
+                        <h5>Any Questions</h5>
+                        <p>Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
+                        <button type="button" class="more">
+                            <span>Learn More</span> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------ End of Support ---------->
+
+        <!---------------- Footer -------------->
+        <footer class="footer textCenter">
+            <div class="bannerText paddTop">
+                <div class="footerSocial">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-vk"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="copyRight">
+                    © 2020 Cake Bakery. All Rights Reserved | Design by
+                    <a href="https://www.facebook.com/profile.php?id=100005998263548" target="_blank">Ahmed Omda</a>
+                </p>
+            </div>
+            <img src="Images/chef.png" class="imgFluid chefStyle" alt="...">
+        </footer>
+        <a id="toTop" onclick="scrollToTop()">
+            <span id="toTopHover"></span>
+        </a>
+        <!-------------- End Footer ------------>
+        <script src="main.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    </body>
+</html>
